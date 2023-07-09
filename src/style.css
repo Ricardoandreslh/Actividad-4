@@ -16,6 +16,10 @@ h1 {
     margin-bottom: 20px;
 }
 
+body.night-mode {
+    background-color: #333;
+    color: #eee;
+}
 
 #searchInput {
     width: 100%;
@@ -67,6 +71,18 @@ h1 {
     margin-bottom: 20px;
 }
 
+.toggle-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    cursor: pointer;
+}
+
+.toggle-mode img {
+    width: 30px;
+    height: 30px;
+}
 @media (max-width: 768px) {
     .contenedor {
         padding: 10px;
