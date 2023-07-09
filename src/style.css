@@ -36,7 +36,6 @@ body.night-mode {
     flex-wrap: wrap;
     justify-content: space-around;
     position: fixed;
-
     padding-top: 60px;
     align-content: center;
 }
