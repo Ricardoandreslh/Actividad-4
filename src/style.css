@@ -17,8 +17,8 @@ h1 {
 }
 
 body.night-mode {
-    background-color: #333;
-    color: #eee;
+    background-color: #181818;
+    color: #ffffff;
 }
 
 #searchInput {
@@ -33,9 +33,7 @@ body.night-mode {
 
 #searchResults {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
-    position: fixed;
     padding-top: 60px;
     align-content: center;
 }
