@@ -20,8 +20,16 @@ const debounceSearch = _.debounce(() => {
                 const userDiv = document.createElement('div');
                 userDiv.innerHTML = `
                     <img src="${user.avatar_url}" alt="User Profile Picture" />
-                    <p>Name: ${user.login}</p>
-                    <p>Github Name: ${user.login}</p>
-                    <p>Company: ${user.company ? user.company : 'N/A'}</p>
-                    <p>Repositories: ${user.public_repos}</p>
+                    <p>Name | Nombre: ${user.login}</p>
+                    <p>Github Name | Github Nombre: ${user.login}</p>
+                    <p>Company | Compañia: ${user.company ? user.company : 'N/A'}</p>
+                    <p>Repositorios: ${user.public_repos}</p>
                 `;
+                searchResults.appendChild(userDiv);
+            });
+        })
+        .catch(error => {
+            searchResults.innerHTML = 'Un error ha ocurrido!';
+            console.error(error);
+        });
+}, 500);
