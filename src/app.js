@@ -1,3 +1,6 @@
+import axios from "axios";
+import debounce from "lodash/debounce";
+
 const searchInput = document.getElementById('searchInput');
 const searchResults = document.getElementById('searchResults');
 
@@ -33,3 +36,5 @@ const debounceSearch = _.debounce(() => {
             console.error(error);
         });
 }, 500);
+
+searchInput.addEventListener('keyup', debounceSearch);
