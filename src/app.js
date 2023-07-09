@@ -20,7 +20,7 @@ const debounceSearch = _.debounce(() => {
             users.forEach(user => {
                 const userDiv = document.createElement('div');
                 userDiv.innerHTML = `
-                    <img src="${user.avatar_url}" alt="User Profile Picture" />
+                    <img src="${user.avatar_url}" alt="User PFP" />
                     <p>Name | Nombre: ${user.login}</p>
                     <p>Github Name | Github Nombre: ${user.login}</p>
                     <p>Company | Compañia: ${user.company ? user.company : 'N/A'}</p>
